@@ -1,0 +1,108 @@
+/* Style pour le conteneur principal de l'application */
+.App {
+  text-align: center; /* Centre le texte à l'intérieur de ce conteneur */
+}
+
+/* Style pour le logo de l'application */
+.App-logo {
+  height: 40vmin; /* Définit la hauteur du logo à 40% de la hauteur de la fenêtre */
+  pointer-events: none; /* Désactive les événements de pointeur sur le logo */
+}
+
+/* Animation pour le logo de l'application lorsque la préférence de mouvement réduit n'est pas activée */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Animation de rotation infinie du logo sur 20 secondes */
+  }
+}
+
+/* Style pour l'en-tête de l'application */
+.App-header {
+  background-color: #282c34; /* Définit la couleur de fond de l'en-tête */
+  min-height: 100vh; /* Définit la hauteur minimale de l'en-tête à 100% de la hauteur de la fenêtre */
+  display: flex; /* Utilise le modèle de boîte flexible pour la mise en page */
+  flex-direction: column; /* Aligne les éléments enfants en colonne */
+  align-items: center; /* Centre les éléments enfants horizontalement */
+  justify-content: center; /* Centre les éléments enfants verticalement */
+  font-size: calc(10px + 2vmin); /* Définit la taille de la police en fonction de la taille de la fenêtre */
+  color: white; /* Définit la couleur du texte à blanc */
+}
+
+/* Style pour le lien de l'application */
+.App-link {
+  color: #61dafb; /* Définit la couleur du lien */
+}
+
+/* Animation de rotation pour le logo de l'application */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Début de l'animation à 0 degré */
+  }
+  to {
+    transform: rotate(360deg); /* Fin de l'animation à 360 degrés */
+  }
+}
+
+/* Style pour la description du produit */
+.product-description {
+  font-size: 1em; /* Définit la taille de la police */
+  color: #ff0000; /* Définit la couleur du texte */
+  font-weight: bold; /* Définit le poids de la police */
+  margin-top: 15px; /* Ajoute une marge supérieure de 10 pixels */
+}
+
+/* Style pour le prix du produit */
+.product-price {
+  font-size: 1.5em; /* Définit la taille de la police */
+  color: #e91e63; /* Définit la couleur du texte */
+}
+
+/* Style pour le nom du produit */
+.product-name {
+  font-size: 1.5em; /* Définit la taille de la police */
+  font-weight: bold; /* Définit le poids de la police */
+  color: #3f51b5; /* Définit la couleur du texte */
+}
+
+/* Style pour l'image du produit */
+.product-image {
+  width: 100%; /* Définit la largeur de l'image à 100% du conteneur */
+  height: 300px; /* Définit la hauteur de l'image */
+  object-fit: cover; /* Couvre l'image pour remplir le conteneur */
+}
+
+body {
+  background: linear-gradient(135deg, #94a9d3, #d1d5db); /* Couleurs dégradées pour l'arrière-plan */
+  font-family: 'Poppins', sans-serif; /* Police utilisée pour le texte */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Agrandissement de la carte au survol */
+}
+
+.card-body { /* Style pour le contenu de la carte */
+  background: white; /* Couleur de fond blanche */
+  padding: 20px; /* Espacement intérieur de 20 pixels */
+  border-radius: 0 0 15px 15px; /* Coins arrondis en bas à gauche et à droite */
+}
+
+h4 {
+  color: #ff7b54; /* Couleur du texte */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Style pour le texte de salutation */
+.greeting {
+  font-size: 20px; /* Taille de la police */
+  font-weight: 600; /* Poids de la police */
+  color: #374151; /* Couleur du texte */
+  margin-top: 20px; /* Marge supérieure de 20 pixels */
+}
+
+.image-small {
+  width: 80px; /* Largeur de l'image */
+  height: 80px; /* Hauteur de l'image */
+  border-radius: 50%; /* Bordure arrondie pour rendre l'image circulaire */
+  border: 3px solid #ff7b54; /* Bordure de 3 pixels de couleur */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre portée légère */
+}
