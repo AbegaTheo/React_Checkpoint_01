@@ -5,7 +5,6 @@ import product from "./product"; // Importation de l'objet d'informations sur le
 import Name from "./composants/Name"; // Importation du composant Name
 import Price from "./composants/Price"; // Importation du composant Price
 import Description from "./composants/Description"; // Importation du composant Description
-import Image from "./composants/Image"; // Importation du composant Image
 
 // Création de la fonction App qui renvoie le contenu de la page
 const App = () => {
